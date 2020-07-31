@@ -1,0 +1,41 @@
+    <h1 class="text-primary">LOGIN</h1>
+    
+    <form class="form-group col-md-4 rounded px-1 py-1" style="background-color: lightgray;">
+        <div class="form-inline align-content-center col-12 pb-3 pl-0">
+            <label for="login_correo_text" class="font-weight-normal px-4 py-2">Correo</label><BR>
+            <div class="input-group col-12">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="email" class="form-control" id="login_correo_text" placeholder="Correo" required>
+            </div>
+        </div>
+        <div class="form-inline align-content-center col-12 pb-3 pl-0">
+            <label for="login_clave_text" class="font-weight-normal px-4 py-2">Clave</label>
+            <div class="input-group col-12">
+                <div class="input-group-prepend">
+                    <div class="input-group-text">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="password" class="form-control" id="login_clave_text" placeholder="Contraseña" required>
+            </div>
+        </div>
+        <div class="form-inline col-12 justify-content-center mb-5">
+            <!--BOTON ENVIAR-->
+            <button type="button" class="button btn-primary shadow-none border-0 py-2 align-self-start col-5 rounded" 
+                onclick="SegundoParcial.LoginPage.Login()" id="login_btn_enviar">Enviar</button>
+            <!--BOTON LIMPIAR-->
+            <button type="button" class="button btn-warning shadow-none border-0 py-2 align-self-end col-5 offset-1 rounded text-white" 
+                onclick="SegundoParcial.LoginPage.Limpiar()" id="login_btn_limpiar">Limpiar</button>
+        </div>
+        <button type="button" class="button btn-success col-12 border-0 rounded py-2 mb-4" onclick="SegundoParcial.Controller.Registro()" 
+            id="login_btn_registrar">Quiero Registrarme!</button>
+    </form>
+
+    <!--ALERT-->
+    <div id="alert_container">
+    </div>
+    <!--/ALERT-->

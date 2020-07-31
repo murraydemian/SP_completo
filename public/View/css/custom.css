@@ -1,0 +1,7 @@
+.ListDiv{
+    min-height: 500px;
+}
+.hidden-form{
+    display: none;
+    background-color: darkcyan;
+}

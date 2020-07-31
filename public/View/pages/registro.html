@@ -1,0 +1,90 @@
+
+<body class="container-fluid col-12" style="background-color: rgb(153, 167, 184);">
+    <h1 class="text-primary">REGISTRO</h1>
+
+    <form class="form-group col-md-4 rounded px-1 py-1" style="background-color: lightgray;">
+        <!--DIV CORREO-->
+        <div class="form-inline align-content-center COL-12 p-2 mt-3">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-envelope p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="text" id="registro_correo_text" class="form-control" placeholder="Correo" autocomplete="off">
+            </div>
+        </div>
+        <!--DIV CLAVE-->
+        <div class="form-inline align-content-center col-12 p-2">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-key p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="password" id="registro_clave_text" class="form-control" placeholder="Clave" autocomplete="off">
+            </div>
+        </div>
+        <!--DIV NOMBRE-->
+        <div class="form-inline align-content-center col-12 p-2">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-user p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="text" id="registro_nombre_text" class="form-control" placeholder="Nombre" autocomplete="off">
+            </div>
+        </div>
+        <!--DIV APELLIDO-->
+        <div class="form-inline align-content-center col-12 p-2">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-user p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="text" id="registro_apellido_text" class="form-control" placeholder="Apellido" autocomplete="off">
+            </div>
+        </div>
+        <!--DIV PERFIL-->
+        <div class="form-inline align-content-center col-12 p-2">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-id-card p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <select class="custom-select" id="registro_perfil_select">
+                    <option selected>Seleccionar perfil</option>
+                    <option value="empleado">Empleado</option>
+                    <option value="encargado">Encargado</option>
+                    <option value="propietario">Propietario</option>
+                  </select>
+            </div>
+        </div>
+        <!--DIV FOTO-->
+        <div class="form-inline align-content-center col-12 p-2">
+            <div class="input-group col-12">
+                <div class="input-group-pretend">
+                    <div class="input-group-text">
+                        <i class="fa fa-camera p-1" aria-hidden="true"></i>
+                    </div>
+                </div>
+                <input type="file" id="registro_foto_file" class="form-control custom-file" accept="image/*">
+            </div>
+        </div>
+        <!--DIV BOTONES-->
+        <div class="form-inline justify-content-center col-12 p-2 mb-3">        
+            <button type="button" class="button btn-success shadow-none border-0 col-5 py-2 align-self-start rounded"
+                onclick="SegundoParcial.Registro.Registrar()">Registrar</button>
+            <button type="button" class="button btn-warning shadow-none border-0 col-5 py-2 align-self-end rounded offset-1"
+                onclick="SegundoParcial.Registro.Limpiar()">Limpiar</button>    
+        </div>
+        <!--ALERT-->
+        <div id="alert_container">
+        </div>
+        <!--/ALERT-->
+    </form>
+    
+</body>
