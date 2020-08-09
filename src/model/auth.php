@@ -73,6 +73,7 @@ class Authenticator{
     public static function VerifyPassword($userloginfo, $userdbinfo){
         return $userloginfo->clave == $userdbinfo->clave;
         //por el momento es redudante esto pero, planeo implementar salado y hasheo previo a
+        //agrego una linea de comentario
         //guardar las claves en la DB. 
     }
     public static function CreateAud(){
